@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benetton 베네통</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="js/common.js" defer></script>
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon-152.png" sizes="152x152">
+    <!-- 아이콘CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <script src="https://kit.fontawesome.com/2e29ab6721.js" crossorigin="anonymous"></script>
+    <!-- 제이쿼리CDN -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div id="h-logo">
+                <a href="#"><img src="images/logo_wh.png" alt="베네통로고"></a>
+            </div>
+            <ul id="main-gnb">
+                <li class="sm">
+                    <a href="#" class="text-or">SALE</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-item"><a href="#">WOMEN</a></div>
+                        <div class="sub-menu-item"><a href="#">MEN</a></div>
+                        <div class="sub-menu-item"><a href="#">KIDS</a></div>
+                    </div>
+                </li>
+                <li><a href="#">WOMEN</a></li>
+                <li><a href="#">MEN</a></li>
+                <li><a href="#">KIDS</a></li>
+                <li class="sm"><a href="#">UNDERCOLORS</a>
+                    <div class="sub-menu">
+                        <div class="sub-menu-item"><a href="#">WOMEN</a></div>
+                        <div class="sub-menu-item"><a href="#">MEN</a></div>
+                        <div class="sub-menu-item"><a href="#">KIDS</a></div>
+                    </div>
+                </li>
+                <li><a href="#">BENETTON HOME</a></li>
+            </ul>
+            <div class="nav-icons">
+                <span id="nav-icon-serch"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <span id="nav-icon-my"><a href="#"><i class="fa-regular fa-user"></i></a></span>
+                <span id="nav-icon-wish" class="nav-num-icon-wrap">
+                    <a href="#">
+                        <i class="fa-regular fa-heart"></i>
+                        <!-- 위시리스트에 아이템 있을 때 갯수 노출-->
+                        <span class="nav-wish-num nav-icon-num"><b>10</b></span>
+                    </a>
+                </span>
+                <span id="nav-icon-cart" class="nav-num-icon-wrap">
+                    <a href="#">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <!-- 장바구니에 아이템 있을 때 갯수 노출 -->
+                        <span class="nav-icon-num nav-cart-num"><b>1</b></span>
+                    </a>
+                </span>
+                <span id="nav-icon-menu-btn"><i class="fa-solid fa-bars"></i></span>
+            </div>
+        </div>
+        <div id="sub-menu-bg"></div>
+        <div id="mo-menu-wrap">
+            <div class="container">
+                <div id="mo-menu-close-btn"><i class="fa-solid fa-xmark"></i></div>
+                <div class="item-serch-box">
+                    <input type="text" placeholder="상품, 색상, 컬렉션 등을 검색하세요"><button><i class="fa-solid fa-magnifying-glass"></i> 검색</button>
+                </div>
+                <ul id="mo-menu">
+                    <li><a href="#" class="text-or">SALE<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="mo-sub-menu">
+                            <li><a href="#">WOMEN</a></li>
+                            <li><a href="#">MEN</a></li>
+                            <li><a href="#">KIDS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">KIDS</a></li>
+                    <li><a href="#">UNDERCOLORS<i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="mo-sub-menu">
+                            <li><a href="#">WOMEN</a></li>
+                            <li><a href="#">MEN</a></li>
+                            <li><a href="#">KIDS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">BENETTON HOME</a></li>
+                </ul>
+                <div class="individual-menu">
+                    <a><i class="fa-regular fa-user"></i></a>
+                    <a class="nav-num-icon-wrap">
+                        <i class="fa-regular fa-heart"></i>
+                        <!-- 위시리스트에 아이템 있을 때 갯수 노출-->
+                        <span class="nav-wish-num nav-icon-num"><b>10</b></span>
+                    </a>
+                    <a class="nav-num-icon-wrap">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <!-- 장바구니에 아이템 있을 때 갯수 노출 -->
+                        <span class="nav-icon-num nav-cart-num"><b>1</b></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="main-visual-wrapper">
+        <div class="main-visual-item">
+            <div class="main-visual-bg">
+                <div class="le" style="background-image: url(images/ADULT-lander-suit_01.jpg);">
+                    <div class="main-visual-shortcut"><a href="#">WOMEN</a></div>
+                </div>
+                <div class="rig" style="background-image: url(images/ADULT-lander-suit_02.jpg);">
+                    <div class="main-visual-shortcut"><a href="#">MEN</a></div>
+                </div>
+            </div>
+            <div class="main-visual-text">
+                <span>THE LATEST FROM FW23: NEW LOOKS FOR BACK TO THE OFFICE</span>
+                <h2>OFFICE</h2>
+                <h3 class="font-bnb">ESSENTIALS</h3>
+            </div>
+        </div>
+        <div class="main-visual-item">
+            <div class="main-visual-bg">
+                <div class="le" style="background-image: url(images/KIDS-lander-focusuniform_01.jpg);">
+                    <div class="main-visual-shortcut"><a href="#">MEN</a></div>
+                </div>
+                <div class="rig" style="background-image: url(images/KIDS-lander-focusuniform_02.jpg);">
+                    <div class="main-visual-shortcut"><a href="#">WOMEN</a></div>
+                </div>
+            </div>
+            <div class="main-visual-text">
+                <span>IN CLASS, IN STYLE: NEW FW23 LOOKSE</span>
+                <h2>SCHOOL</h2>
+                <h3 class="font-bnb">OF STYLE</h3>
+            </div>
+        </div>
+    </div>
+    <main>
+        <!-- 베스트 아이템 -->
+        <section id="Best-sec">
+            <div class="inner">
+                <h2 class="ct-tit">BEST ITEM</h2>
+                <ul class="bestItem-tab-tit">
+                    <li>WOMEN</li>
+                    <li>MEN</li>
+                    <li>KIDS</li>
+                </ul>
+                <div class="bestItem-tab-content">
+                    <!-- 여성 베스트 아이템 -->
+                    <div class="bestItem-tab-item">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/Benetton_23A_103CD102M_05N_F_Full_PDP_h.jpg" alt="여성 베스트 아이템 01"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">WOMEN</span>
+                                                <strong>루지 니트</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 할인아이템 class='dcitem'-->
+                                            <span class="item-price price dcitem">229,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">183,200</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">20%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like active"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/Benetton_23A_31VKD104K_1U3_F_Full_PDP_h.jpg" alt="여성 베스트 아이템 02"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">WOMEN</span>
+                                                <strong>블리스 티셔츠</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 , 할인아이템 class='dcitem'-->
+                                            <span class="item-price price dcitem">129,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">116,100</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">10%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/Benetton_23A_4U4ND001W_71F_FY_Full_PDP_h.jpg" alt="여성 베스트 아이템 03"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">WOMEN</span>
+                                                <strong>리지 스커트</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 -->
+                                            <span class="item-price price">239,000</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/Benetton_23A_1035D201W_68F_F_Full_PDP_h.jpg" alt="여성 베스트 아이템 04"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">WOMEN</span>
+                                                <strong>슬림핏 니트</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 할인아이템 class='dcitem'-->
+                                            <span class="item-price price dcitem">229,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">183,200</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">20%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 남성 베스트 아이템 -->
+                    <div class="bestItem-tab-item">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/Benetton_23A_1135K400O_0D6_F_Full_PDP_h.jpg" alt="남성 베스트 아이템 01"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">MEN</span>
+                                                <strong>니트 베스트</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 할인아이템 class='dcitem'-->
+                                            <span class="item-price price dcitem">139,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">125,100</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">10%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like active"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/Benetton_23A_3BL0U1064_0D6_F_Full_PDP_h.jpg" alt="남성 베스트 아이템 02"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">MEN</span>
+                                                <strong>나이스 티셔츠</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가  할인아이템 class='dcitem'-->
+                                            <span class="item-price price dcitem">129,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">116,100</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">10%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/Benetton_23A_3MI5J1AF7_108_F_Full_PDP_h.jpg" alt="남성 베스트 아이템 03"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">MEN</span>
+                                                <strong>루지 티셔츠</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가   할인아이템 class='dcitem'-->
+                                            <span class="item-price price dcitem">129,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">116,100</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">10%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/Benetton_23A_4AW757B88_918_F_Full_PDP_h.jpg" alt="남성 베스트 아이템 04"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">MEN</span>
+                                                <strong>아이스 진</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가  할인아이템 class='dcitem'-->
+                                            <span class="item-price price dcitem">209,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">167,200</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">20%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 키즈 베스트 아이템 -->
+                    <div class="bestItem-tab-item">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/UCB-Bambino_23A_3J68G10AE_05N_FS_Full_PDP_h.jpg" alt="유아동 베스트 아이템 01"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">KIDS</span>
+                                                <strong>배색 맨투맨</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 할인아이템 class='dcitem' -->
+                                            <span class="item-price price dcitem">49,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">39,200</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">20%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like active"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/UCB-Bambino_23A_3J70G10A7_1U3_FS_Full_PDP_h.jpg" alt="유아동 베스트 아이템 02"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">KIDS</span>
+                                                <strong>로고 맨투맨</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 할인아이템 class='dcitem' -->
+                                            <span class="item-price price dcitem">49,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">39,200</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">20%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/UCB-Bambino_23A_24OXCN02T_0V3_FS_Full_PDP_h.jpg" alt="유아동 베스트 아이템 03"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">KIDS</span>
+                                                <strong>포켓 자켓</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 할인아이템 class='dcitem' -->
+                                            <span class="item-price price dcitem">159,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">151,050</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">5%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like active"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/UCB-Bambino_23A_3J70G10A7_0D6_FS_Full_PDP_h.webp" alt="유아동 베스트 아이템 04"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">KIDS</span>
+                                                <strong>로고 자수 맨투맨</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 할인아이템 class='dcitem' -->
+                                            <span class="item-price price dcitem">49,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">39,200</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">20%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 시즌세일 -->
+        <section id="timeSale-sec">
+            <div class="inner">
+                <div class="text-area">
+                    <h2 class="ct-tit"><span class="material-symbols-outlined">timer</span>SEASON SALE</h2>
+                    <div id="Sale-counter">
+                        <div class="Sale-counter-item"><strong>D-<span id="scDays">0</span></strong></div>
+                        <div class="Sale-counter-item"><span id="scHours">0</span>: </div>
+                        <div class="Sale-counter-item"><span id="scMin">0</span>: </div>
+                        <div class="Sale-counter-item"><span id="scSec">0</span></div>
+                    </div>
+                </div>
+                <div class="product-area">
+                    <div class="slide-wrap">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/seasonSaletem01.jpg" alt="세일 아이템 01"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">WOMEN</span>
+                                                <strong>새틴 스커트</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 할인아이템 class='dcitem' -->
+                                            <span class="item-price price dcitem">229,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">114,500</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">50%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like active"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/seasonSaletem02.jpg" alt="세일 아이템 02"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">MEN</span>
+                                                <strong>토끼 프린팅 티셔츠</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 할인아이템 class='dcitem' -->
+                                            <span class="item-price price dcitem">129,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">64,500</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">50%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/seasonSaletem03.jpg" alt="세일 아이템 03"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">KIDS</span>
+                                                <strong>소매 러플 티셔츠</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 할인아이템 class='dcitem' -->
+                                            <span class="item-price price dcitem">39,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">23,400</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">40%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/seasonSaletem04.jpg" alt="세일 아이템 04"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">WOMEN</span>
+                                                <strong>프린팅 나시 블라우스</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 할인아이템 class='dcitem' -->
+                                            <span class="item-price price dcitem">229,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">137,400</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">40%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/seasonSaletem05.jpg" alt="세일 아이템 05"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">MEN</span>
+                                                <strong>슬림핏 진</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 할인아이템 class='dcitem' -->
+                                            <span class="item-price price dcitem">209,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">104,500</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">50%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-img">
+                                        <a href="#"><img src="images/seasonSaletem06.jpg" alt="세일 아이템 06"></a>
+                                    </div>
+                                    <div class="item-text">
+                                        <div class="item-tit-box">
+                                            <a href="#">
+                                                <span class="category">KIDS</span>
+                                                <strong>100% 오가닉코든 반팔 티셔츠</strong>
+                                            </a>
+                                        </div>
+                                        <div class="item-money-box">
+                                            <!-- 정가 할인아이템 class='dcitem' -->
+                                            <span class="item-price price dcitem">39,000</span>
+                                            <!-- 할인가격 -->
+                                            <strong class="item-dis-price price">23,400</strong>
+                                            <!-- 할인율 -->
+                                            <span class="item-dis-rate">40%</span>
+                                            <!-- 찜하기 버튼 클릭시 class="active"추가 -->
+                                            <span class="item-like"><i class="fa-regular fa-heart"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="timeSale-product-btn prev"><i class="fa-solid fa-caret-left"></i></p>
+                    <p class="timeSale-product-btn next"><i class="fa-solid fa-caret-right"></i></p>
+                    <div class="btn-wrap">
+                        <a href="#" class="Btn01">More View</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 인스타 게시물 -->
+        <section id="insta-sec">
+            <div class="inner">
+                <h2 class="ct-tit">INSTAGRAM<a href="#">@Benetton-korea</a></h2>
+                <div class="insta-content">
+                    <ul>
+                        <li><a href="">
+                            <img src="images/BW_inside.jpg" alt="">
+                        </a></li>
+                        <li><a href="">
+                            <img src="images/BW_fw23-adult-campaign-2.jpg" alt="">
+                        </a></li>
+                        <li><a href="">
+                            <img src="images/BW_fw23-adult-campaign.jpg" alt="">
+                        </a></li>
+                        <li><a href="">
+                            <img src="images/BW_fw23-kids-campaign.jpg" alt="">
+                        </a></li>
+                        <li><a href="">
+                            <img src="images/SPOTIFY-spotlight-big-module-landing.jpg" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="view_top">
+            <i class="fa-solid fa-chevron-up"></i>
+            <span>TOP</span>
+        </div>
+    </main>
+    <footer>
+        <div class="inner">
+            <div class="f-top">
+                <div class="ft-logo">
+                    <img src="images/logo_wh.png" alt="베네통 로고">
+                </div>
+                <ul class="ft-menu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">매장안내 </a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보취급방침</a></li>
+                </ul>
+            </div>
+            <div class="ft-bot">
+                <address>
+                    <ul>
+                        <li>서울시 서초구 서초대로 398 BNK 디지털타워 15F</li>
+                        <li>대표이사 : 조형래</li>
+                        <li>사업자 등록번호 : 211-86-40964</li>
+                        <li>통신판매업신고:제2017-서울서초-1250</li>
+                    </ul>
+                </address>
+                <div class="ft-sns">
+                    <ul>
+                        <li><a href="#"><img src="images/pc-ft-insta-white.png" alt="인스타그램 바로가기"><span>INSTAGRAM</span></a></li>
+                        <li><a href="#"><img src="images/pc-ft-kakao-chat-white.png" alt="카카오톡 상담 바로가기"><span>KAKAO</span></a></li>
+                    </ul>
+                </div>
+                <p class="ft-copy">COPYRIGHT © BENETTON KOREA CO., LTD. ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
