@@ -630,9 +630,17 @@ footer{
             }
         }
     }
-    .sticky-item-wrap .sticky-item{
-        min-width: 100vw;
+    .sticky-container{
+        height: auto !important;
+        .sticky-item-wrap{
+            flex-direction: column;
+            .sticky-item{
+                min-width: 100vw;
+                height: 50vh;
+            }
+        }
     }
+    
 }
 //media max-width:550px
 @include TabletToPhone{
