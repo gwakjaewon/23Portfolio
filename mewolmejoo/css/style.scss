@@ -603,6 +603,12 @@ footer{
 }
 //media max-width:950px
 @include laptopToTablet{
+    header nav{
+        width: 45%;
+        h1.openBtn{
+            left: 45%;
+        }
+    }
     .main-section{
         .tab-tit{
             display: none;
@@ -629,6 +635,12 @@ footer{
 @include TabletToPhone{
     body{
         font-size: 12px;
+    }
+    header nav{
+        width: 55%;
+        h1.openBtn{
+            left: 55%;
+        }
     }
     .brand-content-wrap .rolling-wrap .rolling-list ul li img{
         transform: scale(0.2);
