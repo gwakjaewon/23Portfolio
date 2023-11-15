@@ -685,8 +685,9 @@ footer .info {
 @media (max-width: 949px) {
   header nav {
     width: 45%;
+    left: -45%;
   }
-  header nav h1.openBtn {
+  header h1.openBtn {
     left: 45%;
   }
   .main-section .tab-tit {
@@ -713,8 +714,9 @@ footer .info {
   }
   header nav {
     width: 55%;
+    left: -55%;
   }
-  header nav h1.openBtn {
+  header h1.openBtn {
     left: 55%;
   }
   .brand-content-wrap .rolling-wrap .rolling-list ul li img {
