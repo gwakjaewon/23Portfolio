@@ -1,0 +1,25 @@
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #2a2a2a;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #2a2a2a;
+}
+button{
+    cursor: pointer;
+}
+img,input,button,i,.material-symbols-outlined{
+    vertical-align: middle;
+}
+input{
+    padding: 5px;
+}
+input::placeholder , textarea::placeholder{
+    color: #ccc;
+}
+

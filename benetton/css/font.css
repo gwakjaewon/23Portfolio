@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@font-face{
+    font-family: 'butler-and-butlerstencil';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/butler-and-butlerstencil/Butler_Regular_Stencil.otf);
+}
+
+.font-bnb{
+    font-family: 'butler-and-butlerstencil';
+}
+
+.text-or{
+    color: #ff7b02 !important;
+}
