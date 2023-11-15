@@ -683,6 +683,12 @@ footer .info {
 }
 
 @media (max-width: 949px) {
+  header nav {
+    width: 45%;
+  }
+  header nav h1.openBtn {
+    left: 45%;
+  }
   .main-section .tab-tit {
     display: none;
   }
@@ -704,6 +710,12 @@ footer .info {
 @media (max-width: 549px) {
   body {
     font-size: 12px;
+  }
+  header nav {
+    width: 55%;
+  }
+  header nav h1.openBtn {
+    left: 55%;
   }
   .brand-content-wrap .rolling-wrap .rolling-list ul li img {
     transform: scale(0.2);
