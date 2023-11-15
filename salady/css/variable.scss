@@ -1,0 +1,54 @@
+//칼라 변수 지정
+$main-gn:#17633D;
+$deep-gn:#175436;
+$main-ye:#ffe25c;
+$main-or:#f37836;
+
+//미디어 사이즈
+$width1300: 1300px;
+$width800: 800px;
+$width767: 767px;
+$width600: 650px;
+$width500: 500px;
+@mixin Wd1300{
+    @media (max-width: #{$width1300}){
+        @content
+    }
+};
+@mixin Wd800{
+    @media (max-width: #{$width800}){
+        @content
+    }
+};
+@mixin Wd767{
+    @media (max-width: #{$width767}){
+        @content
+    }
+};
+@mixin Wd650{
+    @media (max-width: #{$width600}){
+        @content
+    }
+};
+@mixin Wd500{
+    @media (max-width: #{$width500}){
+        @content
+    }
+};
+
+//flex정렬
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+}
+@mixin flex-sb{
+    display: flex;
+    justify-content: space-between;
+}
+
+// 글자 색상
+.gn-text{color: $main-gn;}
+
+//width값 지정
+.wd28{width: 28%;}
+.wd100{width: 100%;}
