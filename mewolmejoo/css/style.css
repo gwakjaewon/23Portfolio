@@ -704,8 +704,15 @@ footer .info {
   .main-section .tab-content-wrap .tab-content-in .apply-box {
     display: none;
   }
-  .sticky-item-wrap .sticky-item {
+  .sticky-container {
+    height: auto !important;
+  }
+  .sticky-container .sticky-item-wrap {
+    flex-direction: column;
+  }
+  .sticky-container .sticky-item-wrap .sticky-item {
     min-width: 100vw;
+    height: 50vh;
   }
 }
 @media (max-width: 549px) {
